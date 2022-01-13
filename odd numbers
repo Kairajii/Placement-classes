@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+
+int odd(int a,int n){
+	if(a>n) return 0;
+	cout<<a<<" ";
+	return odd(a+2,n);
+}
+
+int main()
+{
+	int n,a=1;
+	cin>>n;
+	cout<<odd(a,n);
+}
